@@ -18,24 +18,23 @@ function Last7Days () {
     return(result);
 }
 
-//var xValues = ["2022-08-22","M", "T", "W", "T", "F", "S"];
 var xValues = Last7Days();
-// console.log()
+
 //document.write(xValues);
 var ydict = getCookie("timetracker");
-// for (const [key, value] of Object.entries(ydict)) {
-//   document.writeln("visualizer debug")
-//   document.writeln(`${key}: ${value}`);
-// }
+            
+//  for (const [key, value] of Object.entries(ydict)) {
+//    document.writeln("visualizer debug")
+//    document.writeln(`${key}::${value}`);
+//  }
 
 var yValues=[];
 for (i=0; i<7; i++){
   yValues.push(ydict[xValues[i]]);
-  document.writeln(xValues[i]+":")
-  document.writeln(ydict[xValues[i]])
+  // document.writeln(xValues[i]+":")
+  // document.writeln(ydict[xValues[i]])
+  // document.writeln(yValues.join(";"));
 }
-//var yValues = [30, 45, 50, 82, 40, 30, 90];
-// var barColors = ["purple","","","","","",""];
 
 new Chart("myChart", {
   type: "bar",
