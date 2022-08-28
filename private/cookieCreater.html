@@ -7,7 +7,7 @@
             for (var i=0; i<7; i++) {
                 var d = new Date();
                 d.setDate(d.getDate() -6 + i);
-                var key = 'lucastracker_' + d.getTime().toString();
+                var key = 'timetracker_' + d.getTime().toString();
                 var value = d.setMinutes(d.getMinutes()+ i*10+10);
                 document.cookie = key + " = " + value;
                 //console.log(key + " = " + value);
