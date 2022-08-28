@@ -22,7 +22,7 @@ function Last7Days () {
 var xValues = Last7Days();
 // console.log()
 //document.write(xValues);
-var ydict = getCookie("lucastracker");
+var ydict = getCookie("timetracker");
 // for (const [key, value] of Object.entries(ydict)) {
 //   document.writeln("visualizer debug")
 //   document.writeln(`${key}: ${value}`);
